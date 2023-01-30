@@ -1,0 +1,9 @@
+[Unit]
+Description= C2 Server blocker in network
+After=network.target
+
+[Service]
+ExecStart=/bin/c2-blocker.sh
+
+[Install]
+WantedBy=multi-user.target
